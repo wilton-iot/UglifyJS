@@ -28,5 +28,15 @@
 
         "scripts": {
           "test": "$(which nodeunit || echo node_modules/nodeunit/bin/nodeunit) test/unit/scripts.js && test/testparser.js && test/testconsolidator.js"
-        }
+        },
+        "wilton": {
+          "excludes": [
+              "bin",
+              "test",
+              "tmp",
+              "README.html",
+              "README.org",
+              "docstyle.css"
+        ]
+      }
 }

@@ -1,3 +1,4 @@
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 //convienence function(src, [options]);
 function uglify(orig_code, options){
   options || (options = {});
@@ -16,3 +17,5 @@ uglify.uglify = require("./lib/process");
 uglify.consolidator = require("./lib/consolidator");
 
 module.exports = uglify
+
+require = requireOrig;});
